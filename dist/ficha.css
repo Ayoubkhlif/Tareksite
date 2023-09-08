@@ -1,0 +1,72 @@
+
+html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+}
+
+body {
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.25) 200%);
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+#fich {
+    width: 90%;
+    max-width: 400px;
+    height: 80%;
+    min-height: 500px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 80px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+h2 {
+    max-height: 55px;
+    max-width: 89%;
+    text-align: center;
+    overflow: auto;
+    font-family: "Sofia", sans-serif;
+    font-size: 30px;
+    color: #3045DB;
+}
+#fich div {
+    flex: 1;
+    border: 1px solid white;
+    width: 89%;
+    margin: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto
+}
+i {
+    margin: 5px;
+    color: #CCCCFF;
+    font-size: 18px;
+}
+#fich div p {
+    margin: 5px;
+    color: #fff;
+}
+.fa-car-side {
+    scale: 5;
+}
+em {
+    color: #FF3984;
+    margin: 5px;
+}
