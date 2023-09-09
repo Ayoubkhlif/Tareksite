@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clients du Tarek Auto école</title>
+    <link rel="icon" href="./dist/car_64px.png" />
+    <script>
+        let par = document.querySelector(':root')
+        par.style.setProperty('--h', innerHeight + 'px')
+    </script>
+    <style>
+        :root {
+            --h: 0
+        }
+
+        html {
+            overflow: hidden;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
+            margin: 0;
+            height: var(--h);
+            overflow: clip;
+        }
+
+        .itar {
+            width: 300px;
+            height: 350px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 10%;
+            backdrop-filter: blur(20px);
+            padding-top: 25px;
+        }
+
+        .circle {
+            background-color: #000;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-image: linear-gradient(-225deg, #7085B6 0%, #87A7D9 50%, #DEF3F8 100%);
+        }
+
+        .first {
+            position: absolute;
+            top: -75px;
+            left: 225px;
+        }
+
+        .second {
+            position: absolute;
+            bottom: -75px;
+            right: 225px;
+        }
+
+        form {
+            width: 250px;
+            margin: auto;
+            margin-top: 15px;
+        }
+
+        input {
+            width: 90%;
+            height: 25px;
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            border: 0;
+            padding: 2px 4px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .out {
+            background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
+        }
+
+        .in {
+            background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+        }
+    </style>
+</head>
+
+<body>
+    <div style="position: relative;">
+        <div class="circle first"></div>
+        <div class="circle second"></div>
+        <div class="itar">
+            <h1 style="margin: auto; margin-top: 10px; color: white; width: max-content; flex: 1;">Entrer votre CIN</h1>
+            <form id="for" action="./dist/ficha.html">
+                <input id="cin" value="" type="text" placeholder="CIN" class="in" name="cin" required><br>
+                <input type="submit" value="login" class="out">
+            </form>
+        </div>
+    </div>
+    <script src="./dist/bundle.js"></script>
+</body>
+
+</html>
